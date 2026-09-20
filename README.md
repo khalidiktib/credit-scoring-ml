@@ -40,29 +40,24 @@ flowchart LR
 *(Run the pipeline locally and drop your own screenshots into `docs/screenshots/`, then this section renders them automatically on GitHub.)*
 
 **MLflow — experiment comparison** (`mlflow ui` → Experiments tab, all 3 runs, sorted by `pr_auc`)
-```markdown
+
 ![MLflow experiments](docs/screenshots/mlflow_experiments.png)
-```
 
 **MLflow — Model Registry** (Models tab → `credit-scoring-model` → version 1, stage `Staging`)
-```markdown
+
 ![MLflow model registry](docs/screenshots/mlflow_registry.png)
-```
 
 **FastAPI — interactive docs** (`http://localhost:8000/docs`, `/predict` expanded with the example payload)
-```markdown
+
 ![FastAPI Swagger UI](docs/screenshots/fastapi_docs.png)
-```
 
 **Terminal — pipeline validation** (`check_pipeline.py` output showing 0 residual NaN and stratification check)
-```markdown
+
 ![check_pipeline.py output](docs/screenshots/check_pipeline_output.png)
-```
 
 **Docker — container running** (`docker compose up` logs + a successful `curl /predict` response)
-```markdown
+
 ![Docker running](docs/screenshots/docker_running.png)
-```
 
 ## Project structure
 
