@@ -1,0 +1,12 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+data/raw/*
+data/processed/*
+notebooks/
+tests/
+.git/
+.gitignore
+mlruns/
+*.zip

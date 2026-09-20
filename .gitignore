@@ -1,0 +1,30 @@
+# Data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Modèles sérialisés
+models/*.pkl
+models/*.joblib
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Env
+.env
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,12 @@
+# docker-compose évite de retaper une longue commande "docker run" avec
+# tous ses flags -- surtout utile ici car on doit monter un volume.
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"          # host:container -- accessible sur localhost:8000
+    volumes:
+      - ./mlruns:/app/mlruns # monte le Registry MLflow en lecture, voir Dockerfile
+      - ./data:/app/data     # nécessaire pour lancer l'entraînement depuis le conteneur
+    environment:
+      - MLFLOW_TRACKING_URI=file:/app/mlruns
